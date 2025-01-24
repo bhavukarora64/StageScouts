@@ -1,0 +1,82 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build directories
+dist/
+build/
+
+# Dependency directories for package managers
+.bower_components/
+.bower-cache/
+
+# Environment variables
+.env
+.env.*.local
+
+# Production files
+*.local
+
+# OS and IDE Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
+
+# Coverage files
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Debug files
+debug/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Testing output
+.nyc_output/
+jest/
+test-results/
+*.test.js.snap
+__snapshots__/
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Logs
+*.log
+
+# Optional npm cache directory
+.npm/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Misc
+*.bak
+*.orig
