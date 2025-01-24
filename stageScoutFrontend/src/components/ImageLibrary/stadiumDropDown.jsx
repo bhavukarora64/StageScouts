@@ -8,7 +8,7 @@ function StadiumDropDown(){
 
     const [stadiumList, setStadiumList] = useState([]);
     async function getStadium(){
-        const response  = await fetch("http://localhost:3000/api/stadium/all", {
+        const response  = await fetch("https://stage-scouts-backend.vercel.app/api/stadium/all", {
             headers: {
                 'Authorization': localStorage.getItem('Authorization')
             }

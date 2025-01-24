@@ -54,7 +54,7 @@ function ImageUpload(){
                 return alert('Something Went Wrong, Please fill the manadatory fields and try again ! !')
             }
 
-            const response = await fetch("http://localhost:3000/api/image/upload", {
+            const response = await fetch("https://stage-scouts-backend.vercel.app/api/image/upload", {
                 method:"POST",
                 headers: {
                     'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ function Button(props){
             return
         }
 
-        const response = await fetch("http://localhost:3000/api/auth/signup", {
+        const response = await fetch("https://stage-scouts-backend.vercel.app/api/auth/signup", {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'

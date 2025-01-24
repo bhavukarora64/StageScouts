@@ -11,7 +11,7 @@ function UserLoginProvider({children}){
         const authToken  = localStorage.getItem("Authorization") || undefined
         
         if(authToken){
-            const response  = await fetch("http://localhost:3000/me", {
+            const response  = await fetch("https://stage-scouts-backend.vercel.app/me", {
                 "method":"GET",
                 "headers":{
                     "authorization": authToken

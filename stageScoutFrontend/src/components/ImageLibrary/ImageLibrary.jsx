@@ -14,7 +14,7 @@ function ImageLibrary(){
     const [urlList, setUrlList] = useState([]);
     
     async function fetchImageURL(){
-        const reponse  = await fetch(`http://localhost:3000/api/image?stadiumId=${stadiumId}`, {
+        const reponse  = await fetch(`https://stage-scouts-backend.vercel.app/api/image?stadiumId=${stadiumId}`, {
             'method': 'GET'
         })
 
