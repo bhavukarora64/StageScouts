@@ -8,7 +8,11 @@ const dbMiddleware = require('./middlewares/dbConnection.js')
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://stage-scouts-frontend.vercel.app', // Replace with your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],          // Specify allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+}));
 app.use(dbMiddleware);
 app.use(bodyParser.json());
 
