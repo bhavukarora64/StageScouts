@@ -10,10 +10,10 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+    origin: ["https://stage-scouts-frontend.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }));
 
 app.options('*', cors());
 
